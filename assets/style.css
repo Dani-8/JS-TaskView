@@ -43,7 +43,7 @@ body{
 .header h2{
     font-size: 40px;
     font-weight: 800;
-    color: rgb(139, 45, 189);
+    color: rgb(84, 76, 193);
 }
 .header p{
     font-size: 16px;
@@ -74,7 +74,16 @@ body{
     padding: 30px;
     border-radius: 15px;
 }
-
+.title{
+    font-size: 27px;
+    font-weight: 700;
+    color: rgb(39, 66, 97);
+    margin-bottom: 15px;
+}
+.desc{
+    color: #a1a1a1;
+    margin-bottom: 15px;
+}
 
 .code-block{
     background-color: rgb(240, 240, 240);
@@ -82,9 +91,12 @@ body{
     margin: 10px 0;
     border-radius: 10px;
 }
-
+.code-block h3{
+    font-size: 18px;
+    color: #595959;
+}
 .result-block{
-    background-color: rgb(222, 204, 249);
+    background-color: rgb(236, 226, 252);
     color: rgb(103, 69, 204);
     padding: 10px;
     margin: 10px 0;
@@ -93,15 +105,15 @@ body{
 
 
 .code{
-    background-color: rgb(61, 84, 114);
-    color: rgb(219, 219, 219);
+    background-color: rgb(38, 64, 99);
+    color: rgb(240, 240, 240);
     font-size: 15px;
     padding: 10px 15px;
     margin: 10px 0;
     border-radius: 10px;
 }
 .output{
-    background-color: rgb(237, 228, 249);
+    background-color: rgb(255, 255, 255);
     font-size: 15px;
     padding: 10px 15px;
     margin: 10px 0;
