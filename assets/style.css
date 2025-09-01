@@ -8,33 +8,105 @@ body{
     padding: 30px;
     background-color: rgb(223, 228, 241);
     color: #1f2937;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* ------------------------------------------ */
 /* ------------------------------------------ */
 
+.container{
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    width: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    text-align: center;
+    /* background-color: lightblue; */
+    padding: 20px;
+    margin: 30px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(139, 45, 189);
+}
+.header p{
+    font-size: 16px;
+    color: #8290a1;
+}
+
+/* ------------------------------------- */
+/* ------------------------------------- */
+
+/* TASK-CONTAINER */
+
+.tasks-cont{
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 10px rgba(142, 141, 141, 0.3) inset;
+    padding: 30px;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* TASK-BLOCK */
+
+.task-block{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(142, 141, 141, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+}
 
 
+.code-block{
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.result-block{
+    background-color: rgb(222, 204, 249);
+    color: rgb(103, 69, 204);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.code{
+    background-color: rgb(61, 84, 114);
+    color: rgb(219, 219, 219);
+    font-size: 15px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.output{
+    background-color: rgb(237, 228, 249);
+    font-size: 15px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
 
 
 
