@@ -179,13 +179,16 @@
 
 // task-7
 
+function isAnagram(str1, str2){
+    let s1 = str1.replace(/\s+/g, '').toLowerCase().split("").sort().join("");
+    let s2 = str2.replace(/\s+/g, '').toLowerCase().split("").sort().join("");
+
+    return s1 === s2;
+}
 
 
-
-
-
-
-
+console.log(isAnagram("listen", "silent")); // true
+console.log(isAnagram("hello", "world"));   // false
 
 
 
