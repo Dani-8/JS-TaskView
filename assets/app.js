@@ -113,18 +113,42 @@
 
 // Task-4
 
-function findDuplicateElement(arr){
+// function findDuplicateElement(arr){
+//     let duplicate = []
 
-    for(let i = 0; i < arr.length; i++){
-        
+//     for(let i = 0; i < arr.length; i++){
+//         for(j = i+1; j < arr.length; j++){
+//             if(arr[i] === arr[j] && !duplicate.includes(arr[i])){
+//                 duplicate.push(arr[i])
+//             }
+//         }
+//     }
+
+//     return duplicate
+// }
+
+// console.log(findDuplicateElement([1, 2, 3, 4, 5, 2, 3, 6, 1, 1, 1]));
+
+
+// task-5
+
+function charCount(str){
+    let count = {}
+
+    for(let i = 0; i < str.length; i++){
+        let char = str[i].toLowerCase()
+
+        if(count[char]){
+            count[char]++
+        }else{
+            count[char] = 1
+        }
     }
 
-
+    return count
 }
 
-
-
-
+console.log(charCount("Hello"));
 
 
 
