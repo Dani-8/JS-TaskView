@@ -152,31 +152,32 @@
 
 
 // task-6 P:1
-function recursiveFibonacci(n) {
-  if (n <= 1) {
-    return n; // base cases: fib(0)=0, fib(1)=1
-  }
-  return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
-}
+// function recursiveFibonacci(n) {
+//     if (n <= 1) {
+//         return n; // base cases: fib(0)=0, fib(1)=1
+//     }
+//     return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
+// }
 
-console.log(recursiveFibonacci(6)); 
-
-
-// task-6 P:2
-function fibonacci(n){
-    let seq = [0,1] //FIXED STARTING VALUES
-
-    for(let i = 2; i <= n; i++){
-        seq[i] = seq[i-1] + seq[i-2]
-    }
-
-    return seq.slice(0, n + 1)
-}
-
-console.log(fibonacci(6)); 
-// Output: [0, 1, 1, 2, 3, 5]
+// console.log(recursiveFibonacci(6)); 
 
 
+// // task-6 P:2
+// function fibonacci(n){
+//     let seq = [0,1] //FIXED STARTING VALUES
+
+//     for(let i = 2; i <= n; i++){
+//         seq[i] = seq[i-1] + seq[i-2]
+//     }
+
+//     return seq.slice(0, n + 1)
+// }
+
+// console.log(fibonacci(6)); 
+
+
+
+// task-7
 
 
 
