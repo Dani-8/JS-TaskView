@@ -132,23 +132,47 @@
 
 // task-5
 
-function charCount(str){
-    let count = {}
+// function charCount(str){
+//     let count = {}
 
-    for(let i = 0; i < str.length; i++){
-        let char = str[i].toLowerCase()
+//     for(let i = 0; i < str.length; i++){
+//         let char = str[i].toLowerCase()
 
-        if(count[char]){
-            count[char]++
-        }else{
-            count[char] = 1
-        }
-    }
+//         if(count[char]){
+//             count[char]++
+//         }else{
+//             count[char] = 1
+//         }
+//     }
 
-    return count
-}
+//     return count
+// }
 
-console.log(charCount("Hello"));
+// console.log(charCount("Hello"));
+
+
+// task-6
+
+function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
