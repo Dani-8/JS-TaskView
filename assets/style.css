@@ -96,7 +96,7 @@ body{
     color: #595959;
 }
 .result-block{
-    background-color: rgb(236, 226, 252);
+    background-color: rgb(245, 238, 255);
     color: rgb(103, 69, 204);
     padding: 10px;
     margin: 10px 0;
@@ -105,7 +105,7 @@ body{
 
 
 .code{
-    background-color: rgb(38, 64, 99);
+    background-color: rgb(31, 46, 64);
     color: rgb(240, 240, 240);
     font-size: 15px;
     padding: 10px 15px;
