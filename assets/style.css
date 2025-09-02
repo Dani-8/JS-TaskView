@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 30px;
     background-color: rgb(223, 228, 241);
     color: #1f2937;
