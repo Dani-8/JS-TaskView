@@ -463,6 +463,23 @@ function isPrime(num){
 console.log(isPrime(7));
 console.log(isPrime(10));
 
+const isPrimeCode = `
+function isPrime(num){
+    if(num <= 1) return false
+
+    let sqrt = Math.sqrt(num);
+
+    for(let i = 2; i <= sqrt; i++){
+        if(num % i === 0) return num + " is not a Prime number";
+    }
+    return num + " is a Prime number";
+}
+
+console.log(isPrime(7));
+console.log(isPrime(10));
+`
+
+renderTask("Task-11: Prime Checker", "Check if a number is prime.", isPrimeCode);
 
 
 
@@ -486,6 +503,27 @@ function mergeArray(arr1, arr2){
 console.log(mergeArray([1,2,3,4], [5,6,7,8]));
 
 
+const mergeArrayCode = `
+function mergeArray(arr1, arr2){
+    let merged = []
+
+    for(let i = 0; i < arr1.length; i++){
+        merged.push(arr1[i])
+    }
+
+    for(let i = 0; i < arr2.length; i++){
+        merged.push(arr2[i])
+    }
+
+    return merged
+}
+
+console.log(mergeArray([1,2,3,4], [5,6,7,8]));
+`
+
+renderTask("Task-12: Merge Arrays", "Merge two arrays into one.", mergeArrayCode);
+
+
 
 
 
@@ -504,7 +542,22 @@ function findMissingNumber(arr, n){
 
 console.log(findMissingNumber([1, 2, 3, 5, 6], 6));
 
+const findMissingNumberCode = `
+function findMissingNumber(arr, n){
+    let total = (n * (n + 1)) / 2;
+    let sum = 0;
 
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i]
+    }
+
+    return total - sum
+}
+
+console.log(findMissingNumber([1, 2, 3, 5, 6], 6));
+`
+
+renderTask("Task-13: Missing Number Finder", "Find the missing number in an array.", findMissingNumberCode);
 
 
 
@@ -525,6 +578,25 @@ function findMissingNumbers(arr, n){
 console.log(findMissingNumbers([1, 2, 5], 6));
 
 
+const findMissingNumbersCode = `
+function findMissingNumbers(arr, n){
+    let missing = []
+
+    for(let i= 1; i <= n; i++){
+        if(!arr.includes(i)){
+            missing.push(i)
+        }
+    }
+
+    return missing
+}
+
+console.log(findMissingNumbers([1, 2, 5], 6));
+`
+
+renderTask("Task-13: Missing Numbers Finder", "Find the missing numbers in an array.", findMissingNumbersCode);
+
+
 
 
 //Task-14
@@ -542,3 +614,20 @@ function removeDuplicates(arr){
 
 console.log(removeDuplicates([1,2,3,4,3,2,1,5,6,8]));
 
+
+const removeDuplicatesCode = `
+function removeDuplicates(arr){
+    let unique = []
+
+    for(let i =0; i < arr.length; i++){
+        if(!unique.includes(arr[i])){
+            unique.push(arr[i])
+        }
+    }
+    return unique
+}
+
+console.log(removeDuplicates([1,2,3,4,3,2,1,5,6,8]));
+`
+
+renderTask("Task-14: Duplicate Remover", "Remove duplicates from an array.", removeDuplicatesCode);
