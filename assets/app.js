@@ -489,17 +489,46 @@
 
 
 
-// // task-13
+// // task-13 P:1
+
+// function findMissingNumber(arr, n){
+//     let total = (n * (n + 1)) / 2;
+//     let sum = 0;
+
+//     for(let i = 0; i < arr.length; i++){
+//         sum += arr[i]
+//     }
+
+//     return total - sum
+// }
+
+// console.log(findMissingNumber([1, 2, 3, 5, 6], 6));
 
 
 
 
 
+// // task-13 P:2
+
+// function findMissingNumbers(arr, n){
+//     let missing = []
+
+//     for(let i= 1; i <= n; i++){
+//         if(!arr.includes(i)){
+//             missing.push(i)
+//         }
+//     }
+
+//     return missing
+// }
+
+// console.log(findMissingNumbers([1, 2, 5], 6));
 
 
 
 
+// //Task-14
 
-
+function removeDuplicates
 
 
