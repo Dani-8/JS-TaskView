@@ -161,9 +161,16 @@ function findPalindrome(str){
 console.log(findPalindrome("madam"));
 `
 
-renderTask("Task-3: Check Palindrome", "Check if a given string is a palindrome.", findPalindromeCode);
+// renderTask("Task-3: Check Palindrome", "Check if a given string is a palindrome.", findPalindromeCode);
 
+const renderTask3 = () => {
+    const id = "task3";
+    const title = "Task-3: Check Palindrome";
+    const descp = "Check if a given string is a palindrome.";
+    const code = findPalindromeCode
 
+    renderTask(id, title, descp, code)
+}
 
 
 // Task-4
@@ -203,9 +210,16 @@ function findDuplicateElement(arr){
 console.log(findDuplicateElement([1, 2, 3, 4, 5, 2, 3, 6, 1, 1, 1]));
 `
 
-renderTask("Task-4: Find Duplicate Element", "Find all duplicate elements in an array.", findDuplicateElementCode);
+// renderTask("Task-4: Find Duplicate Element", "Find all duplicate elements in an array.", findDuplicateElementCode);
 
+const renderTask4 = () => {
+    const id = "task4";
+    const title = "Task-4: Find Duplicate Element";
+    const descp = "Find all duplicate elements in an array.";
+    const code = findDuplicateElementCode
 
+    renderTask(id, title, descp, code)
+}
 
 
 
@@ -250,8 +264,16 @@ function charCount(str){
 console.log(charCount("Hello"));
 `
 
-renderTask("Task-5: Character Count", "Count the occurrences of each character in a string.", charCountCode);
+// renderTask("Task-5: Character Count", "Count the occurrences of each character in a string.", charCountCode);
 
+const renderTask5 = () => {
+    const id = "task5";
+    const title = "Task-5: Character Count";
+    const descp = "Count the occurrences of each character in a string.";
+    const code = charCountCode
+
+    renderTask(id, title, descp, code)
+}
 
 
 
@@ -277,7 +299,17 @@ function recursiveFibonacci(n) {
 console.log(recursiveFibonacci(6));
 `
 
-renderTask("Task-6: Recursive Fibonacci", "Calculate Fibonacci sequence using recursion.", recursiveFibonacciCode);
+// renderTask("Task-6: Recursive Fibonacci", "Calculate Fibonacci sequence using recursion.", recursiveFibonacciCode);
+
+const renderTask6P1 = () => {
+    const id = "task6P1";
+    const title = "Task-6: Recursive Fibonacci";
+    const descp = "Calculate Fibonacci sequence using recursion.";
+    const code = recursiveFibonacciCode
+
+    renderTask(id, title, descp, code)
+}
+
 
 
 // // task-6 P:2
@@ -308,9 +340,16 @@ function fibonacci(n){
 console.log(fibonacci(6));
 `
 
-renderTask("Task-6: Fibonacci Sequence", "Generate Fibonacci sequence up to n.", fibonacciCode);
+// renderTask("Task-6: Fibonacci Sequence", "Generate Fibonacci sequence up to n.", fibonacciCode);
 
+const renderTask6P2 = () => {
+    const id = "task6P2";
+    const title = "Task-6: Fibonacci Sequence";
+    const descp = "Generate Fibonacci sequence up to n.";
+    const code = fibonacciCode
 
+    renderTask(id, title, descp, code)
+}
 
 
 
@@ -346,9 +385,16 @@ console.log(isAnagram("listen", "silent")); // true
 console.log(isAnagram("hello", "world"));   // false
 `
 
-renderTask("Task-7: Anagram Checker", "Check if two strings are Anagrams.", isAnagramCode);
+// renderTask("Task-7: Anagram Checker", "Check if two strings are Anagrams.", isAnagramCode);
 
+const renderTask7 = () => {
+    const id = "task7";
+    const title = "Task-7: Anagram Checker";
+    const descp = "Check if two strings are Anagrams.";
+    const code = isAnagramCode
 
+    renderTask(id, title, descp, code)
+}
 
 
 
@@ -381,9 +427,16 @@ function sumArray(arr){
 console.log(sumArray([1, 2, 3, 6]));
 `
 
-renderTask("Task-8: Sum Array", "Calculate the sum of all elements in an array.", sumArrayCode);
+// renderTask("Task-8: Sum Array", "Calculate the sum of all elements in an array.", sumArrayCode);
 
+const renderTask8 = () => {
+    const id = "task8";
+    const title = "Task-8: Sum Array";
+    const descp = "Calculate the sum of all elements in an array.";
+    const code = sumArrayCode
 
+    renderTask(id, title, descp, code)
+}
 
 
 
@@ -422,9 +475,16 @@ function sortedArray(arr){
 console.log(sortedArray([5, 2, 8, 1, 3]));
 `
 
-renderTask("Task-9: Sort Array", "Sort an array of numbers.", sortedArrayCode);
+// renderTask("Task-9: Sort Array", "Sort an array of numbers.", sortedArrayCode);
 
+const renderTask9 = () => {
+    const id = "task9";
+    const title = "Task-9: Sort Array";
+    const descp = "Sort an array of numbers.";
+    const code = sortedArrayCode
 
+    renderTask(id, title, descp, code)
+}
 
 
 // task-10
@@ -470,8 +530,16 @@ function countVowels(str){
 console.log(countVowels("Hello World"));
 `
 
-renderTask("Task-10: Vowel Counter", "Count vowels in a string.", countVowelsCode);
+// renderTask("Task-10: Vowel Counter", "Count vowels in a string.", countVowelsCode);
 
+const renderTask10 = () => {
+    const id = "task10";
+    const title = "Task-10: Vowel Counter";
+    const descp = "Count vowels in a string.";
+    const code = countVowelsCode
+
+    renderTask(id, title, descp, code)
+}
 
 
 
@@ -508,9 +576,16 @@ console.log(isPrime(7));
 console.log(isPrime(10));
 `
 
-renderTask("Task-11: Prime Checker", "Check if a number is prime.", isPrimeCode);
+// renderTask("Task-11: Prime Checker", "Check if a number is prime.", isPrimeCode);
 
+const renderTask11 = () => {
+    const id = "task11";
+    const title = "Task-11: Prime Checker";
+    const descp = "Check if a number is prime.";
+    const code = isPrimeCode
 
+    renderTask(id, title, descp, code)
+}
 
 
 //Task-12
@@ -550,9 +625,16 @@ function mergeArray(arr1, arr2){
 console.log(mergeArray([1,2,3,4], [5,6,7,8]));
 `
 
-renderTask("Task-12: Merge Arrays", "Merge two arrays into one.", mergeArrayCode);
+// renderTask("Task-12: Merge Arrays", "Merge two arrays into one.", mergeArrayCode);
 
+const renderTask12 = () => {
+    const id = "task12";
+    const title = "Task-12: Merge Arrays";
+    const descp = "Merge two arrays into one.";
+    const code = mergeArrayCode
 
+    renderTask(id, title, descp, code)
+}
 
 
 
@@ -586,12 +668,20 @@ function findMissingNumber(arr, n){
 console.log(findMissingNumber([1, 2, 3, 5, 6], 6));
 `
 
-renderTask("Task-13: Missing Number Finder", "Find the missing number in an array.", findMissingNumberCode);
+// renderTask("Task-13: Missing Number Finder", "Find the missing number in an array.", findMissingNumberCode);
+
+const renderTask13P1 = () => {
+    const id = "task13P1";
+    const title = "Task-13: Missing Number Finder";
+    const descp = "Find the missing number in an array.";
+    const code = findMissingNumberCode
+
+    renderTask(id, title, descp, code)
+}
 
 
 
 // task-13 P:2
-
 function findMissingNumbers(arr, n){
     let missing = []
 
@@ -623,8 +713,16 @@ function findMissingNumbers(arr, n){
 console.log(findMissingNumbers([1, 2, 5], 6));
 `
 
-renderTask("Task-13: Missing Numbers Finder", "Find the missing numbers in an array.", findMissingNumbersCode);
+// renderTask("Task-13: Missing Numbers Finder", "Find the missing numbers in an array.", findMissingNumbersCode);
 
+const renderTask13P2 = () => {
+    const id = "task13P2";
+    const title = "Task-13: Missing Numbers Finder";
+    const descp = "Find the missing numbers in an array.";
+    const code = findMissingNumbersCode
+
+    renderTask(id, title, descp, code)
+}
 
 
 
@@ -659,4 +757,13 @@ function removeDuplicates(arr){
 console.log(removeDuplicates([1,2,3,4,3,2,1,5,6,8]));
 `
 
-renderTask("Task-14: Duplicate Remover", "Remove duplicates from an array.", removeDuplicatesCode);
+// renderTask("Task-14: Duplicate Remover", "Remove duplicates from an array.", removeDuplicatesCode);
+
+const renderTask14 = () => {
+    const id = "task14";
+    const title = "Task-14: Duplicate Remover";
+    const descp = "Remove duplicates from an array.";
+    const code = removeDuplicatesCode
+
+    renderTask(id, title, descp, code)
+}
