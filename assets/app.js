@@ -1,15 +1,24 @@
 let tasksCont = document.getElementById("tasks-cont");
 
 // RENDER A TASK BLOCK
-function renderTask(title, descp, code){
+function renderTask(id, title, descp, code) {
     tasksCont.innerHTML += `
         <div class="task-block">
             <h2 class="title">${title}</h2>
             <p class="desc">${descp}</p>
+            <button class="console-btn">Run</button>
+
 
             <div class="code-block">
                 <h3>Code:</h3>
                 <pre class="code">${code}</pre>
+            </div>
+
+            <div class="custom-console">
+                <h3>Console Output:</h3>
+                <div id="console-${id}" class="output-cont">
+                    <pre class="output"></pre>
+                </div>
             </div>
         </div>
     `
@@ -61,7 +70,16 @@ console.log("Min:", min);
 console.log("Max:", max);
 `;
 
-renderTask("Task-1: Find Min & Max", "Find the minimum and maximum values in an array.", findMinMaxCode);
+// renderTask("Task-1: Find Min & Max", "Find the minimum and maximum values in an array.", findMinMaxCode);
+
+const renderTask1 = () => {
+    const id = "task1";
+    const title = "Task-1: Find Min & Max";
+    const descp = "Find the minimum & maximum values in an array.";
+    const code = findMinMaxCode;
+
+    renderTask(id, title, descp, code)
+}
 
 
 
@@ -93,7 +111,18 @@ function reverseArray(arr){
 console.log(reverseArray([1,2,3,4,5]));
 `
 
-renderTask("Task-2: Reverse Array", "Reverse the elements of an array.", reverseArrayCode);
+// renderTask("Task-2: Reverse Array", "Reverse the elements of an array.", reverseArrayCode);
+
+const renderTask2 = () => {
+    const id = "task2";
+    const title = "Task-2: Reverse Array";
+    const descp = "Reverse the elements of an array.";
+    const code = reverseArrayCode;
+
+    renderTask(id, title, descp, code)
+}
+
+
 
 
 // task-3
