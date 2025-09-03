@@ -447,31 +447,49 @@
 
 
 
-// Task-11
+// //Task-11
 
-function isPrime(num){
-    if(num <= 1) return false
+// function isPrime(num){
+//     if(num <= 1) return false
 
-    let sqrt = Math.sqrt(num);
+//     let sqrt = Math.sqrt(num);
 
-    for(let i = 2; i <= sqrt; i++){
-        if(num % i === 0) return false;
-    }
+//     for(let i = 2; i <= sqrt; i++){
+//         if(num % i === 0) return num + " is not a Prime number";
+//     }
+//     return num + " is a Prime number";
+// }
 
-    return true;
-}
-
-console.log(isPrime(7));
-console.log(isPrime(10));
-
+// console.log(isPrime(7));
+// console.log(isPrime(10));
 
 
 
 
 
+// //Task-12
+
+// function mergeArray(arr1, arr2){
+//     let merged = []
+
+//     for(let i = 0; i < arr1.length; i++){
+//         merged.push(arr1[i])
+//     }
+
+//     for(let i = 0; i < arr2.length; i++){
+//         merged.push(arr2[i])
+//     }
+
+//     return merged
+// }
+
+// console.log(mergeArray([1,2,3,4], [5,6,7,8]));
 
 
 
+
+
+// // task-13
 
 
 
