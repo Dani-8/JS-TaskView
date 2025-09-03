@@ -151,6 +151,12 @@ body{
     right: 30px;
 }
 
+.output-cont{
+    display: none;
+}
+.output-cont-visible{
+    display: block;
+}
 
 .output-cont .output{
     background-color: rgb(31, 46, 64);

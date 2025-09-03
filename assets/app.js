@@ -6,7 +6,7 @@ function renderTask(id, title, descp, code) {
         <div class="task-block">
             <h2 class="title">${title}</h2>
             <p class="desc">${descp}</p>
-            <button class="console-btn">Run</button>
+            <button data-task-id="${id}" class="console-btn">Run</button>
 
 
             <div class="code-block">
@@ -767,3 +767,73 @@ const renderTask14 = () => {
 
     renderTask(id, title, descp, code)
 }
+
+
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    renderTask1()
+    renderTask2()
+    renderTask3()
+    renderTask4()
+    renderTask5()
+    renderTask6P1()
+    renderTask6P2()
+    renderTask7()
+    renderTask8()
+    renderTask9()
+    renderTask10()
+    renderTask11()
+    renderTask12()
+    renderTask13P1()
+    renderTask13P2()
+    renderTask14()
+
+
+
+    tasksCont.addEventListener("click", (e) => {
+
+        const consoleBtn = e.target.closest("button[data-task-id]")
+        if(consoleBtn){
+            let taskId = consoleBtn.dataset.taskId
+            let consoleOutput = document.getElementById(`console-${taskId}`)
+
+            document.querySelectorAll(".output-cont").forEach(container => {
+                if(container.id !== `console-${taskId}`){
+                    container.classList.remove('output-cont-visible');
+                }
+            })
+
+            consoleOutput.classList.add("output-cont-visible")
+        }
+
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
