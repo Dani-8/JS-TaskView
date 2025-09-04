@@ -43,10 +43,6 @@ function findMinMax(arr) {
     return { min, max };
 }
 
-const numbers = [5, 2, 9, 1, 5, 6];
-const { min, max } = findMinMax(numbers);
-console.log("Min:", min);
-console.log("Max:", max);
 
 
 const findMinMaxCode = `function findMinMax(arr) {
@@ -95,9 +91,6 @@ function reverseArray(arr){
 }
 
 
-console.log(reverseArray([1,2,3,4,5]));
-
-
 const reverseArrayCode = `
 function reverseArray(arr){
     let reverseArr = []
@@ -140,8 +133,6 @@ function findPalindrome(str){
         return "It's not Palindrome"
     }
 }
-
-console.log(findPalindrome("madam"));
 
 
 const findPalindromeCode = `
@@ -189,7 +180,6 @@ function findDuplicateElement(arr){
     return duplicate
 }
 
-console.log(findDuplicateElement([1, 2, 3, 4, 5, 2, 3, 6, 1, 1, 1]));
 
 
 const findDuplicateElementCode = `
@@ -241,7 +231,6 @@ function charCount(str){
     return count
 }
 
-console.log(charCount("Hello"));
 
 
 const charCountCode = `
@@ -285,7 +274,6 @@ function recursiveFibonacci(n) {
     return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
 }
 
-console.log(recursiveFibonacci(6)); 
 
 
 const recursiveFibonacciCode = `
@@ -323,7 +311,6 @@ function fibonacci(n){
     return seq.slice(0, n + 1)
 }
 
-console.log(fibonacci(6)); 
 
 
 const fibonacciCode = `
@@ -364,9 +351,6 @@ function isAnagram(str1, str2){
     return sorted1 === sorted2;
 }
 
-
-console.log(isAnagram("listen", "silent")); // true
-console.log(isAnagram("hello", "world"));   // false
 
 
 const isAnagramCode = `
@@ -410,7 +394,6 @@ function sumArray(arr){
     return total;
 }
 
-console.log(sumArray([1, 2, 3, 6]));
 
 
 const sumArrayCode = `
@@ -455,7 +438,6 @@ function sortedArray(arr){
     }
     return arr;
 }
-console.log(sortedArray([5, 2, 8, 1, 3]));
 
 
 const sortedArrayCode = `
@@ -506,7 +488,6 @@ function countVowels(str){
     return {count, vowelsFound};
 }
 
-console.log(countVowels("Hello World"));
 
 
 const countVowelsCode = `
@@ -557,8 +538,7 @@ function isPrime(num){
     return num + " is a Prime number";
 }
 
-console.log(isPrime(7));
-console.log(isPrime(10));
+
 
 const isPrimeCode = `
 function isPrime(num){
@@ -604,7 +584,6 @@ function mergeArray(arr1, arr2){
     return merged
 }
 
-console.log(mergeArray([1,2,3,4], [5,6,7,8]));
 
 
 const mergeArrayCode = `
@@ -651,7 +630,6 @@ function findMissingNumber(arr, n){
     return total - sum
 }
 
-console.log(findMissingNumber([1, 2, 3, 5, 6], 6));
 
 const findMissingNumberCode = `
 function findMissingNumber(arr, n){
@@ -694,7 +672,6 @@ function findMissingNumbers(arr, n){
     return missing
 }
 
-console.log(findMissingNumbers([1, 2, 5], 6));
 
 
 const findMissingNumbersCode = `
@@ -739,7 +716,6 @@ function removeDuplicates(arr){
     return unique
 }
 
-console.log(removeDuplicates([1,2,3,4,3,2,1,5,6,8]));
 
 
 const removeDuplicatesCode = `
@@ -774,6 +750,114 @@ const renderTask14 = () => {
 // ------------------------------------------------------------------------
 // ------------------------------------------------------------------------
 
+function renderLogMsg(container, msg){
+    let output = container.querySelector(".output")
+    output.textContent += msg + "\n"
+}
+
+
+const taskRunners = {
+    "task1" : (localConsole) => {
+        const numbers = [5, 2, 9, 1, 5, 6];
+        const { min, max } = findMinMax(numbers);
+        console.clear()
+
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log("Min:", min);
+        console.log("Max:", max);
+
+                
+        localConsole.log("--- Running Task 1: Find Min & Max ---");
+        localConsole.log("Min:", min);
+        localConsole.log("Max:", max);
+    },
+
+    "task2" : (localConsole) => {
+        console.clear()
+
+        console.log("--- Running Task 2: Reverse Array ---");
+        console.log(reverseArray([1,2,3,4,5]));
+        
+        localConsole.log("--- Running Task 2: Reverse Array ---");
+        localConsole.log(reverseArray([1,2,3,4,5]));
+    },
+
+    "task3" : (localConsole) => {
+        console.log("--- Running Task 3: Find Min & Max ---");
+        console.log(findPalindrome("madam"));
+    },
+
+    "task4" : (localConsole) => {
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log(findDuplicateElement([1, 2, 3, 4, 5, 2, 3, 6, 1, 1, 1]));
+    },
+
+    "task5" : (localConsole) => {
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log(charCount("Hello"));
+    },
+
+    "task6P1" : (localConsole) => {
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log(recursiveFibonacci(6)); 
+    },
+
+    "task6P2" : (localConsole) => {
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log(fibonacci(6)); 
+    },
+
+    "task7" : (localConsole) => {
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log(isAnagram("listen", "silent"));
+        console.log(isAnagram("hello", "world")); 
+    },
+
+    "task8" : (localConsole) => {
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log(sumArray([1, 2, 3, 6]));
+    },
+
+    "task9" : (localConsole) => {
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log(sortedArray([5, 2, 8, 1, 3]));  
+    },
+
+    "task10" : (localConsole) => {
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log(countVowels("Hello World"));
+    },
+
+    "task11" : (localConsole) => {
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log(isPrime(7));
+        console.log(isPrime(10));
+    },
+
+    "task12" : (localConsole) => {
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log(mergeArray([1,2,3,4], [5,6,7,8]));
+    },
+
+    "task13P1" : (localConsole) => {
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log(findMissingNumber([1, 2, 3, 5, 6], 6));
+    },
+
+    "task13P2" : (localConsole) => {
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log(findMissingNumbers([1, 2, 5], 6));
+    },
+
+    "task14" : (localConsole) => {
+        console.log("--- Running Task 1: Find Min & Max ---");
+        console.log(removeDuplicates([1,2,3,4,3,2,1,5,6,8]));
+    },
+
+
+}
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     renderTask1()
@@ -794,24 +878,37 @@ document.addEventListener("DOMContentLoaded", () => {
     renderTask14()
 
 
-
     tasksCont.addEventListener("click", (e) => {
+    const consoleBtn = e.target.closest("button[data-task-id]");
+    if (consoleBtn) {
+        let taskId = consoleBtn.dataset.taskId;
+        let consoleOutput = document.getElementById(`console-${taskId}`);
 
-        const consoleBtn = e.target.closest("button[data-task-id]")
-        if(consoleBtn){
-            let taskId = consoleBtn.dataset.taskId
-            let consoleOutput = document.getElementById(`console-${taskId}`)
-
-            document.querySelectorAll(".output-cont").forEach(container => {
-                if(container.id !== `console-${taskId}`){
-                    container.classList.remove('output-cont-visible');
-                }
-            })
-
-            consoleOutput.classList.add("output-cont-visible")
+        // hide other consoles
+        document.querySelectorAll(".output-cont").forEach(container => {
+        if (container.id !== `console-${taskId}`) {
+            container.classList.remove("output-cont-visible");
         }
-        
-    })
+        });
+
+        // clear old output
+        consoleOutput.querySelector(".output").textContent = "";
+        consoleOutput.classList.add("output-cont-visible");
+
+        // custom console
+        const localConsole = {
+        log: function(msg) {
+            renderLogMsg(consoleOutput, String(msg));
+        }
+        };
+
+        // run task
+        if (taskRunners[taskId]) {
+        taskRunners[taskId](localConsole);
+        }
+    }
+    });
+
 })
 
 
