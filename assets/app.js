@@ -810,7 +810,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             consoleOutput.classList.add("output-cont-visible")
         }
-
+        
     })
 })
 
