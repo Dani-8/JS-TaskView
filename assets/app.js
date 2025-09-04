@@ -62,6 +62,7 @@ const findMinMaxCode = `function findMinMax(arr) {
 
 const numbers = [5, 2, 9, 1, 5, 6];
 const { min, max } = findMinMax(numbers);
+console.log("--- Running Task 1: Find Min & Max ---");
 console.log("Min:", min);
 console.log("Max:", max);
 `;
@@ -101,6 +102,7 @@ function reverseArray(arr){
     return reverseArr;
 }
 
+console.log("--- Running Task 2: Reverse Array ---");
 console.log(reverseArray([1,2,3,4,5]));
 `
 
@@ -149,6 +151,7 @@ function findPalindrome(str){
     }
 }
 
+console.log("--- Running Task 3: Palindrome Check ---");
 console.log(findPalindrome("madam"));
 `
 
@@ -197,6 +200,7 @@ function findDuplicateElement(arr){
     return duplicate
 }
 
+console.log("--- Running Task 4: Find Duplicates ---");
 console.log(findDuplicateElement([1, 2, 3, 4, 5, 2, 3, 6, 1, 1, 1]));
 `
 
@@ -250,6 +254,7 @@ function charCount(str){
     return count
 }
 
+console.log("--- Running Task 5: Character Count ---");
 console.log(charCount("Hello"));
 `
 
@@ -284,6 +289,7 @@ function recursiveFibonacci(n) {
     return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
 }
 
+console.log("--- Running Task 6P1: Recursive Fibonacci ---");
 console.log(recursiveFibonacci(6));
 `
 
@@ -324,6 +330,7 @@ function fibonacci(n){
     return seq.slice(0, n + 1)
 }
 
+console.log("--- Running Task 6P2: Fibonacci Sequence ---");
 console.log(fibonacci(6));
 `
 
@@ -355,8 +362,8 @@ function isAnagram(str1, str2){
 
 const isAnagramCode = `
 function isAnagram(str1, str2){
-    let s1 = str1.replace(/\\s+/g, '').toLowerCase();
-    let s2 = str2.replace(/\\s+/g, '').toLowerCase();
+    let s1 = str1.replace(/\s+/g, '').toLowerCase();
+    let s2 = str2.replace(/\s+/g, '').toLowerCase();
 
     let sorted1 = s1.split("").sort().join("");
     let sorted2 = s2.split("").sort().join("");
@@ -364,7 +371,7 @@ function isAnagram(str1, str2){
     return sorted1 === sorted2;
 }
 
-
+console.log("--- Running Task 7: Anagram Checker ---");
 console.log(isAnagram("listen", "silent")); // true
 console.log(isAnagram("hello", "world"));   // false
 `
@@ -407,6 +414,7 @@ function sumArray(arr){
     return total;
 }
 
+console.log("--- Running Task 8: Sum Array ---");
 console.log(sumArray([1, 2, 3, 6]));
 `
 
@@ -454,6 +462,7 @@ function sortedArray(arr){
     }
     return arr;
 }
+console.log("--- Running Task 9: Sort Array ---");
 console.log(sortedArray([5, 2, 8, 1, 3]));
 `
 
@@ -508,6 +517,7 @@ function countVowels(str){
     return {count, vowelsFound};
 }
 
+console.log("--- Running Task 10: Vowel Counter ---");
 console.log(countVowels("Hello World"));
 `
 
@@ -552,6 +562,7 @@ function isPrime(num){
     return num + " is a Prime number";
 }
 
+console.log("--- Running Task 11: Prime Checker ---");
 console.log(isPrime(7));
 console.log(isPrime(10));
 `
@@ -601,6 +612,7 @@ function mergeArray(arr1, arr2){
     return merged
 }
 
+console.log("--- Running Task 12: Merge Arrays ---");
 console.log(mergeArray([1,2,3,4], [5,6,7,8]));
 `
 
@@ -643,6 +655,7 @@ function findMissingNumber(arr, n){
     return total - sum
 }
 
+console.log("--- Running Task 13P1: Missing Number Finder ---");
 console.log(findMissingNumber([1, 2, 3, 5, 6], 6));
 `
 
@@ -687,6 +700,7 @@ function findMissingNumbers(arr, n){
     return missing
 }
 
+console.log("--- Running Task 13P2: Missing Numbers Finder ---");
 console.log(findMissingNumbers([1, 2, 5], 6));
 `
 
@@ -730,6 +744,7 @@ function removeDuplicates(arr){
     return unique
 }
 
+console.log("--- Running Task 14: Duplicate Remover ---");
 console.log(removeDuplicates([1,2,3,4,3,2,1,5,6,8]));
 `
 
