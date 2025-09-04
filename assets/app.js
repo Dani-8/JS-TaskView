@@ -760,98 +760,137 @@ const taskRunners = {
     "task1" : (localConsole) => {
         const numbers = [5, 2, 9, 1, 5, 6];
         const { min, max } = findMinMax(numbers);
-        console.clear()
-
+        console.clear();
         console.log("--- Running Task 1: Find Min & Max ---");
         console.log("Min:", min);
         console.log("Max:", max);
-
-                
         localConsole.log("--- Running Task 1: Find Min & Max ---");
-        localConsole.log("Min:", min);
-        localConsole.log("Max:", max);
+        localConsole.log("Min: " + min);
+        localConsole.log("Max: " + max);
     },
 
     "task2" : (localConsole) => {
-        console.clear()
-
+        console.clear();
         console.log("--- Running Task 2: Reverse Array ---");
         console.log(reverseArray([1,2,3,4,5]));
-        
         localConsole.log("--- Running Task 2: Reverse Array ---");
         localConsole.log(reverseArray([1,2,3,4,5]));
     },
 
     "task3" : (localConsole) => {
-        console.log("--- Running Task 3: Find Min & Max ---");
+        console.clear();
+        console.log("--- Running Task 3: Palindrome Check ---");
         console.log(findPalindrome("madam"));
+        localConsole.log("--- Running Task 3: Palindrome Check ---");
+        localConsole.log(findPalindrome("madam"));
     },
 
     "task4" : (localConsole) => {
-        console.log("--- Running Task 1: Find Min & Max ---");
+        console.clear();
+        console.log("--- Running Task 4: Find Duplicates ---");
         console.log(findDuplicateElement([1, 2, 3, 4, 5, 2, 3, 6, 1, 1, 1]));
+        localConsole.log("--- Running Task 4: Find Duplicates ---");
+        localConsole.log(findDuplicateElement([1, 2, 3, 4, 5, 2, 3, 6, 1, 1, 1]));
     },
 
     "task5" : (localConsole) => {
-        console.log("--- Running Task 1: Find Min & Max ---");
+        console.clear();
+        console.log("--- Running Task 5: Character Count ---");
         console.log(charCount("Hello"));
+        localConsole.log("--- Running Task 5: Character Count ---");
+        localConsole.log(charCount("Hello"));
     },
 
     "task6P1" : (localConsole) => {
-        console.log("--- Running Task 1: Find Min & Max ---");
-        console.log(recursiveFibonacci(6)); 
+        console.clear();
+        console.log("--- Running Task 6P1: Recursive Fibonacci ---");
+        console.log(recursiveFibonacci(6));
+        localConsole.log("--- Running Task 6P1: Recursive Fibonacci ---");
+        localConsole.log(recursiveFibonacci(6));
     },
 
     "task6P2" : (localConsole) => {
-        console.log("--- Running Task 1: Find Min & Max ---");
-        console.log(fibonacci(6)); 
+        console.clear();
+        console.log("--- Running Task 6P2: Fibonacci Sequence ---");
+        console.log(fibonacci(6));
+        localConsole.log("--- Running Task 6P2: Fibonacci Sequence ---");
+        localConsole.log(fibonacci(6));
     },
 
     "task7" : (localConsole) => {
-        console.log("--- Running Task 1: Find Min & Max ---");
+        console.clear();
+        console.log("--- Running Task 7: Anagram Checker ---");
         console.log(isAnagram("listen", "silent"));
-        console.log(isAnagram("hello", "world")); 
+        console.log(isAnagram("hello", "world"));
+        localConsole.log("--- Running Task 7: Anagram Checker ---");
+        localConsole.log(isAnagram("listen", "silent"));
+        localConsole.log(isAnagram("hello", "world"));
     },
 
     "task8" : (localConsole) => {
-        console.log("--- Running Task 1: Find Min & Max ---");
+        console.clear();
+        console.log("--- Running Task 8: Sum Array ---");
         console.log(sumArray([1, 2, 3, 6]));
+        localConsole.log("--- Running Task 8: Sum Array ---");
+        localConsole.log(sumArray([1, 2, 3, 6]));
     },
 
     "task9" : (localConsole) => {
-        console.log("--- Running Task 1: Find Min & Max ---");
-        console.log(sortedArray([5, 2, 8, 1, 3]));  
+        console.clear();
+        console.log("--- Running Task 9: Sort Array ---");
+        console.log(sortedArray([5, 2, 8, 1, 3]));
+        localConsole.log("--- Running Task 9: Sort Array ---");
+        localConsole.log(sortedArray([5, 2, 8, 1, 3]));
     },
 
     "task10" : (localConsole) => {
-        console.log("--- Running Task 1: Find Min & Max ---");
+        console.clear();
+        console.log("--- Running Task 10: Vowel Counter ---");
         console.log(countVowels("Hello World"));
+        localConsole.log("--- Running Task 10: Vowel Counter ---");
+        localConsole.log(countVowels("Hello World"));
     },
 
     "task11" : (localConsole) => {
-        console.log("--- Running Task 1: Find Min & Max ---");
+        console.clear();
+        console.log("--- Running Task 11: Prime Checker ---");
         console.log(isPrime(7));
         console.log(isPrime(10));
+        localConsole.log("--- Running Task 11: Prime Checker ---");
+        localConsole.log(isPrime(7));
+        localConsole.log(isPrime(10));
     },
 
     "task12" : (localConsole) => {
-        console.log("--- Running Task 1: Find Min & Max ---");
+        console.clear();
+        console.log("--- Running Task 12: Merge Arrays ---");
         console.log(mergeArray([1,2,3,4], [5,6,7,8]));
+        localConsole.log("--- Running Task 12: Merge Arrays ---");
+        localConsole.log(mergeArray([1,2,3,4], [5,6,7,8]));
     },
 
     "task13P1" : (localConsole) => {
-        console.log("--- Running Task 1: Find Min & Max ---");
+        console.clear();
+        console.log("--- Running Task 13P1: Missing Number Finder ---");
         console.log(findMissingNumber([1, 2, 3, 5, 6], 6));
+        localConsole.log("--- Running Task 13P1: Missing Number Finder ---");
+        localConsole.log(findMissingNumber([1, 2, 3, 5, 6], 6));
     },
 
     "task13P2" : (localConsole) => {
-        console.log("--- Running Task 1: Find Min & Max ---");
+        console.clear();
+        console.log("--- Running Task 13P2: Missing Numbers Finder ---");
         console.log(findMissingNumbers([1, 2, 5], 6));
+        localConsole.log("--- Running Task 13P2: Missing Numbers Finder ---");
+        localConsole.log(findMissingNumbers([1, 2, 5], 6));
     },
 
     "task14" : (localConsole) => {
-        console.log("--- Running Task 1: Find Min & Max ---");
+        console.clear();
+        console.log("--- Running Task 14: Duplicate Remover ---");
         console.log(removeDuplicates([1,2,3,4,3,2,1,5,6,8]));
+        localConsole.log("--- Running Task 14: Duplicate Remover ---");
+        localConsole.log(removeDuplicates([1,2,3,4,3,2,1,5,6,8]));
     },
 
 
@@ -884,25 +923,29 @@ document.addEventListener("DOMContentLoaded", () => {
         let taskId = consoleBtn.dataset.taskId;
         let consoleOutput = document.getElementById(`console-${taskId}`);
 
-        // hide other consoles
+
         document.querySelectorAll(".output-cont").forEach(container => {
         if (container.id !== `console-${taskId}`) {
             container.classList.remove("output-cont-visible");
         }
         });
 
-        // clear old output
+
         consoleOutput.querySelector(".output").textContent = "";
         consoleOutput.classList.add("output-cont-visible");
 
-        // custom console
+
         const localConsole = {
         log: function(msg) {
-            renderLogMsg(consoleOutput, String(msg));
+            if (typeof msg === 'object') {
+                renderLogMsg(consoleOutput, JSON.stringify(msg));
+            } else {
+                renderLogMsg(consoleOutput, String(msg));
+            }
         }
         };
 
-        // run task
+
         if (taskRunners[taskId]) {
         taskRunners[taskId](localConsole);
         }
